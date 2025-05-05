@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration | Company Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="form-header">
+            <h1>Employee Registration</h1>
+            <p>Please fill out this form to join our team. <span class="required-field">Fields marked with </span> are required.</p>
+        </header>
+        
+        <form class="employee-form" action="confirmation.html" method="GET">
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                
+                <div class="form-group">
+                    <label for="fullname" class="required-field">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact" class="required-field">Contact Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="+91 1234567890" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address" class="required-field">Address</label>
+                    <textarea id="address" name="address" rows="4" placeholder="123 Main St, City, Country" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="required-field">Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="male" required>
+                            <span class="radio-custom"></span>
+                            Male
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="female">
+                            <span class="radio-custom"></span>
+                            Female
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="prefer-not-to-say">
+                            <span class="radio-custom"></span>
+                            Prefer not to say
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Professional Information</h2>
+                
+                <div class="form-group">
+                    <label for="company" class="required-field">Company Name</label>
+                    <input type="text" id="company" name="company" placeholder="NeuroNexus" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required-field">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="department" class="required-field">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="HR">Human Resources</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Development">Development</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Others">Other Department</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit Application</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
